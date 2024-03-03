@@ -41,6 +41,9 @@ Plug 'radenling/vim-dispatch-neovim'
 -- Plug 'OmniSharp/omnisharp-vim'
 -- omnisharp is out of date. Recommended to use https://github.com/razzmatazz/csharp-language-server
 
+-- roc
+Plug 'ChrisWellsWood/roc.vim'
+
 Plug.ends()
 
 vim.g.plug_window = 'tab new'
