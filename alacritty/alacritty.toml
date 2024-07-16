@@ -1,0 +1,35 @@
+custom_cursor_colors = true
+
+[colors.cursor]
+cursor = "0xeeeeee"
+text = "0x262626"
+
+[colors.primary]
+background = "0x262626"
+foreground = "0xcccccc"
+
+[env]
+TERM = "screen-256color"
+
+[font]
+size = 12.0
+
+[font.bold]
+family = "Hack Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "Hack Nerd Font Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "Hack Nerd Font Mono"
+style = "Italic"
+
+[font.normal]
+family = "Hack Nerd Font Mono"
+style = "Regular"
+
+[shell]
+args = ["zsh", "--login"]
+program = "/usr/bin/env"
