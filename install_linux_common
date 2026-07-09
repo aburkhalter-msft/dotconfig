@@ -16,6 +16,11 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 cp "$HOME/config/tmux/tmux.conf" "$HOME/.tmux.conf"
 
+# rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+cargo install cargo-binstall
+cargo binstall cargo-nextest --secure
+
 # Should be the last line in the file
 exec zsh -l
 
