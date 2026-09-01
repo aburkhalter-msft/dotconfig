@@ -26,6 +26,7 @@ Add these reviewers only when their lens applies:
 
 4. **Transformation fidelity and negative space.** For serializers, generators, migrations, format-preserving editors, and read-modify-write code, verify that untouched content, comments, ordering, formatting, unknown fields, and omitted values survive unchanged unless explicitly intended. Require tests that assert only the expected region changes, using realistic fixtures rather than substring-presence checks.
 5. **Generated-artifact reconciliation.** When a plan, preview, migration diff, rendered output, or other generated artifact exists, review it alongside the source. Enumerate every destructive or mutating operation, inspect each removed or overwritten value, and verify that an equivalent value is intentionally removed or recreated elsewhere. Treat the artifact as stronger evidence than prose describing intended behavior.
+6. **Refactor behavior preservation.** A refactor must preserve behavior. Flag changed outputs, errors, ordering, side effects, or edge cases.
 
 Address findings from all reviewers before considering the review complete.
 
